@@ -1,0 +1,23 @@
+ul{
+    list-style-type: none;
+}
+h1{
+color: darkgreen;
+}
+img{
+    opacity:0.9;
+}
+p.xltext{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    width: 400px;
+    height: 20px;
+}
+   
+p.text2 {
+    white-space: nowrap; 
+    width: 400px; 
+   
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }

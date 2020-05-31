@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css"> -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css"> -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="./../css/style5.css">
+    <link rel="stylesheet" href="./../../css/bootstrap.css">
+    <title>Title</title>
+</head>
+
+<body class=" bg-light">
+
+    <div class="container">
+        <div class=" header text-center my-5">
+            <div class=""> <img src="./../../bai4/anh/bootstrap-solid.svg"> </div>
+            <h3 class=" mt-4">Checkout form</h3>
+            <h5 class=" lead mt-2 "> Below is an example form bult entirely with Bootstrap's form control.
+                Each required form group has a validation state that can be triggered by attemping to cubmit the form
+                without completing it.
+
+            </h5>
+        </div>
+        <!--------------------------------------------------------------->
+        <div class=" row ">
+            <div class=" col-8">
+                <h4> Billing address </h4>
+                <div class=" row">
+                    <div class=" col-6 mt-3">
+                        <label>First Name</label> <input class=" form-control" type="text">
+                    </div>
+                    <div class=" col-6 mt-3">
+                        <label>Last name</label> <input class=" form-control" type="text">
+                    </div>
+                </div>
+                <!----->
+                <div class="mt-4">
+                    <div class=" input-group">
+                        <div class=" input-group-prepend">
+                            <span class=" input-group-text">@</span>
+                        </div>
+                        <input type="text" class=" form-control" placeholder=" Username">
+
+                    </div>
+                </div>
+
+
+                <!----->
+                <div class=" mt-3">
+                    <label>Email <span class=" text-muted">(Optional)</span></label>
+                    <input class=" form-control" type="text" placeholder="you@example.com">
+                </div>
+
+                <!----->
+                <div class="mt-3">
+                    <label> Address</label>
+                    <input type="text" placeholder="1234 Main St" class=" form-control">
+
+                </div>
+                <!----->
+                <div class="mt-3">
+                    <label> Address2 <scan class=" text-muted"> (Optipnal)</scan></label>
+                    <input type="text" placeholder="Apartment or suite" class=" form-control">
+                </div>
+                <!----->
+                <div>
+                    <div class=" row mt-3">
+                        <div class=" col-5">
+                            <label>Country</label>
+                            <div>
+
+                                <select class="custom-select">
+                                    <option selected>Choose...</option>
+                                    <option> United Status</option>
+
+                                </select>
+                            </div>
+                        </div>
+                        <!---->
+                        <div class=" col-4">
+                            <label> State</label>
+                            <div>
+                                <select class=" custom-select">
+                                    <option selected>Choose...</option>
+                                    <option> Canada</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-2">
+                            <label> Zip</label>
+                            <div>
+                                <input class=" form-control" type="text">
+                            </div>
+                        </div>
+                    </div>
+                    <!---------->
+                    <div>
+                        <hr class=" mt-4 bg-lightslategray">
+
+                    </div>
+                    <!----->
+                    <div>
+                        <div class="custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1">
+                            <label class="custom-control-label" for="customCheck1"> Shipping address is the same as my
+                                address </label>
+                        </div>
+                        <div class=" custom-control custom-checkbox">
+                            <input type="checkbox" class="custom-control-input" id="customCheck2">
+                            <label class="custom-control-label" for="customCheck2"> Save this information for next
+                                time</label>
+
+                        </div>
+                    </div>
+                    <!----->
+                    <hr class="">
+                </div>
+                <!----->
+                <div>
+                    <h4>Payment</h4>
+                    <div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="1" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="1"> Creat pay</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input type="radio" id="2" name="customRadio" class="custom-control-input">
+                            <label class="custom-control-label" for="2"> pay for </label>
+                        </div>
+                        <div class=" custom-control custom-radio">
+                            <input type="radio" class=" custom-control-input" id="3" name=" customRadio">
+                            <label class=" custom-control-label" for="3"> pay creat </label>
+                            <!-- id , class, name mình chỉ cách phân biệt chưa nhỉ chưa ok
+                            Css: nhận class, id để mình viết property
+                            Javascrip: nhận class và id
+                            PHP: nhận cái name 
+                            Hiểu được chứ hiểu cái này, php nhận name rồi xử lý vị trí thep name
+                            bây h á mình chỉ làm việc với html,css,js nên cái name đó không có tác dụng ok hiểur chỗ đó
+                            mà kì ta cái radio lại trùng id nhỉ, kiểu như file js của bootstrap bị gì :)) trước mình cùng bị lỗi này :))
+
+                            m nghĩ là do code sai ở đâu đó
+                            -->
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <!---->
+                <div class=" row  mt-3">
+                    <div class=" col-6">
+                        <div> Name on card </div>
+                        <div> <input type="text" class=" form-control"> </div>
+                    </div>
+                    <div class=" col-6">
+                        <div> Credit card number</div>
+                        <div><input type="text" class=" form-control"> </div>
+
+                    </div>
+                </div>
+
+
+
+                <!----->
+                <div>
+                    <small class=" text-muted"> Full name as displayed on card </small>
+                </div>
+
+                <!---->
+                <div>
+                    <div class=" row col-6 mt-4">
+                        <div class=" col">
+                            <div> Expiration</div>
+                            <div> <input class=" form-control" type="text"> </div>
+                        </div>
+                        <div class=" col">
+                            <div> CVV</div>
+                            <input class=" form-control" type="text">
+                        </div>
+                    </div>
+                </div>
+                <!---->
+                <hr class=" mt-5">
+                <!---->
+                <button class=" mb-5 btn-block btn-lg text-center badge-primary" type="button "> Continue to
+                    checkout</button>
+                <!----->
+            </div>
+
+
+            <!----------------------------------------------------------------------------->
+            <div class=" col-4  float-right">
+                <div>
+                    <h4 class=" text-muted"> Your Cart
+                        <span class=" badge badge-secondary badge-pill float-right">3</span></h4>
+                </div>
+                <table class=" table table-bordered table- bg-white">
+                    <tr>
+                        <td> Product name
+                            <p class=" float-right text-muted">$12</p>
+
+                            <br> <small class=" text-muted"> Brief description</small></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Second product <p class=" text-muted float-right"> $8</p> <br>
+                            <small class=" text-muted"> Brief description</small>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Third iteam
+                            <p class=" text-muted float-right"> $5</p>
+                            <br>
+                            <small class=" text-muted"> Beief desciption </small>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class=" bg-light text-success"> Promo code
+                            <p class=" text-success float-right">-$5</p>
+                            <br>
+                            <p>EXAMPLECODE </p>
+
+                        </td>
+                    </tr>
+                    <TD>
+                        <p> Total( USD) </p>
+                        <h6 class="  float-right">$20</h6>
+                    </TD>
+
+
+                    </tr>
+                </table>
+
+
+                <!------->
+                <div>
+                    <form class="card p-2">
+                        <div class=" input-group">
+                            <input class=" form-control " type="text" placeholder=" Promocode">
+                            <div class=" input-group-append">
+
+                                <button class=" btn-secondary " type="button"> Dereem </button>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!--------------------------------------------------------------------->
+
+        <div class=" footer text-center my-5">
+            <p class=" text-muted"> © 2017-2018 Company Ngo Thuong xinh đẹp　可愛いネズミ</p>
+
+
+            <nav class="navbar navbar-expand-sm text-center">
+
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Home </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Link </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="#">Disable</a>
+                    </li>
+                </ul>
+            </nav>
+
+
+
+
+        </div>
+        <!--------------------------------->
+    </div>
+</body>
+
+</html>
+
+<!-- thử thay mấy cái checkbox với radio lại xem button làm gì có maãu đâu  -->
+<!-- à biết rồi bỏ qua đoạn này đi, vì liên quan tới js ok(nó call cái function được dựng sẵn trong bootstrap = js uhm)
+ -->
+<!-- Ok giờ để để check visual code
+ định bày cho vài thủ thuật mà thôi, bày online k hiểu đâu :)))ok de bữa nào gặp đi ok -->

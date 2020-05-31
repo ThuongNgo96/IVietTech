@@ -1,0 +1,28 @@
+
+a{
+    color: darkslategray;
+}
+p.text2 {
+    white-space: nowrap; 
+    /* width: 220px;  */
+   
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+img{
+    height: 270px;
+    width: 440px;
+
+
+}
+p.text3{
+    white-space: nowrap; 
+    /* width:370px;  */
+   
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+  .t{
+      padding-left: 130px;
+      
+  }

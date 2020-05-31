@@ -1,0 +1,25 @@
+h1{text-align: center;
+    color: coral;
+}
+.header{
+    height: 70px;
+}
+.hang21{
+height: 20px;
+width: 100%;
+background-color: lightblue;
+
+}
+.hang22{
+    background-color: lightblue;
+    height: 50px;
+    width: 100%;
+}
+.footer{
+    height: 60px;
+}
+.footer1{
+    height: 2px;
+    background-color: white;
+    margin-left: 30px;
+}

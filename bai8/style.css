@@ -1,0 +1,15 @@
+li{ margin-top: 15px;
+    color: darkgray;    
+}
+a {color: dimgray;
+    text-decoration: none;
+
+}
+a:hover{
+ 
+ text-decoration: none;
+}
+li:hover{
+    color: black;
+}
+

@@ -1,0 +1,35 @@
+.height{
+    height: 100vh;
+}
+h3{
+    text-align: center;
+}
+h1{
+
+    text-align: center;
+    color: lawngreen;
+}
+.than{
+    height: 500px;
+}
+.bg-red{
+    color: red;
+}
+a:hover{
+   
+    text-decoration-color: white;
+}
+a:visited{
+    color: white
+}
+ 
+.gach{
+    border-bottom : 6px solid white
+}
+.gach1{
+       border-block: none;
+}
+.gach1:hover{
+    border-bottom : 6px solid white
+}
+
